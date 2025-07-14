@@ -102,3 +102,10 @@ body {
     color: var(--primary-accent);
     margin-top: 50px;
 }
+
+.momo_1 {
+    height: 170px;
+    width: auto;
+    margin: 0 auto 30px;
+    margin-top: 100px;
+}
