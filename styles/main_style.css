@@ -1,38 +1,22 @@
 :root{
-    --primary-bg: #09010d;
-    --primary-accent: #ff0546;
-    --secondary-accent: #0ce6f2;
+    --primary-bg: #150e10;
+    --primary-accent: #77888c;
+    --secondary-accent: #393849;
 }
 
 body {
-  font-family: 'Bungee', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: var(--primary-bg);
-  color: var(--text-light);
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    text-align: center;
-    font-size: 1.5em;
-    display: flex;          /* Activa el modelo flexbox */
-    align-items: center;    /* Centra verticalmente los elementos */
-    justify-content: center; /* Centra horizontalmente */
-    gap: 10px;   
-}
-.header h1 {
-    color: var(--primary-accent);
-}   
-
-.header h2 {
-    color: var(--secondary-accent);
-}
-
-main {
   flex: 1;
   padding: 20px 0 40px;
   position: relative;
@@ -45,9 +29,17 @@ main {
   width: auto;
   margin: 0 auto 30px;
   display: block;
-  transition: transform 0.3s ease;
+  transition: 
+    transform 0.5s ease-out,
+    filter 0.3s ease;
+  transform-origin: center;
+  will-change: transform, filter;
 }
 
 .logo_1:hover {
   transform: scale(1.05);
+}
+
+.logo_1 {
+  animation: fadeIn 1s ease-out;
 }
